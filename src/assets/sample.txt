@@ -1,0 +1,46 @@
+<div className="txt-field">
+            <label htmlFor="gender">Gender</label>
+            <div className="gender">
+              <input
+                className="gender-input"
+                type="radio"
+                id="male"
+                name="gender"
+                onChange={formik.handleChange}
+                value={formik.values.gender}
+              />
+              <label className="gender-label" htmlFor="male">
+                Male
+              </label>
+
+              <input
+                className="gender-input"
+                type="radio"
+                id="female"
+                name="gender"
+                onChange={formik.handleChange}
+                value={formik.values.gender}
+              />
+              <label className="gender-label" htmlFor="female">
+                Female
+              </label>
+            </div>
+          </div>
+
+
+
+
+.txt-field .gender{
+  display: flex;
+}
+
+.txt-field .gender-label {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.txt-field .gender-input {
+  border: 0px;
+  width: 50%;
+  height: 1em;
+}
